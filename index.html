@@ -21,15 +21,20 @@
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 10px;
-      padding: 10px;
-    }
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
     img {
       width: 100%;
-      height: auto;
-      display: block;
-    }
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+    img:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
     footer {
       text-align: center;
       padding: 30px;
